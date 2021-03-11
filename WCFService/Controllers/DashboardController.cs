@@ -11,6 +11,10 @@ namespace WCFService.Controllers
         // GET: Dashborad
         public ActionResult Index()
         {
+            
+            MachineEyes.MachineEyesServiceClient client = new MachineEyes.MachineEyesServiceClient();
+            MachineEyes.Sheds[] s = client.Get_Sheds("adfadf");
+            ViewBag.Shed = s;
             return View();
         }
     }

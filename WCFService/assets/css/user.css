@@ -1,0 +1,15 @@
+﻿.menu-active-title, .navbar-header {
+    color: #fff !important;
+}
+.hide {
+    display: none !important;
+}
+.vs-hide{
+    visibility: hidden !important;
+}
+.top-bar-circle {
+    float: none;
+    height: 20%;
+    margin-right: 0px;
+    margin-left: auto;
+}

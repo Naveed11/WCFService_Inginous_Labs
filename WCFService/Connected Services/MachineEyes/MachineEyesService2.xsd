@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MachineEyesCore" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MachineEyesCore" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfSheds">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Sheds" nillable="true" type="tns:Sheds" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSheds" nillable="true" type="tns:ArrayOfSheds" />
+  <xs:complexType name="Sheds">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentShift" nillable="true" type="tns:currentShift" />
+      <xs:element minOccurs="0" name="ShedID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShedName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="shedSummary" nillable="true" type="tns:ShedSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sheds" nillable="true" type="tns:Sheds" />
+  <xs:complexType name="currentShift">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NoOfShifts" type="xs:int" />
+      <xs:element minOccurs="0" name="ShiftName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShiftStartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="WShift" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="currentShift" nillable="true" type="tns:currentShift" />
+  <xs:complexType name="ShedSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="collectiveSummary" nillable="true" type="tns:CollectiveSummary" />
+      <xs:element minOccurs="0" name="longSummary" nillable="true" type="tns:LongStopSummary" />
+      <xs:element minOccurs="0" name="shortSummary" nillable="true" type="tns:ShortStopSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShedSummary" nillable="true" type="tns:ShedSummary" />
+  <xs:complexType name="CollectiveSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Efficiency" type="xs:double" />
+      <xs:element minOccurs="0" name="LongStopped" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductionEfficiency" type="xs:double" />
+      <xs:element minOccurs="0" name="RPM" type="xs:double" />
+      <xs:element minOccurs="0" name="RunningLooms" type="xs:int" />
+      <xs:element minOccurs="0" name="ShortStopped" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalLooms" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CollectiveSummary" nillable="true" type="tns:CollectiveSummary" />
+  <xs:complexType name="LongStopSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArticleChange_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="ArticleChange_Stopped" type="xs:double" />
+      <xs:element minOccurs="0" name="Electrical_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="Electrical_Stopped" type="xs:double" />
+      <xs:element minOccurs="0" name="Knotting_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="Knotting_Stopped" type="xs:double" />
+      <xs:element minOccurs="0" name="Mechanical_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="Mechanical_Stopped" type="xs:double" />
+      <xs:element minOccurs="0" name="OtherLong_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="OtherLong_Stopped" type="xs:double" />
+      <xs:element minOccurs="0" name="ProgramNA_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="ProgramNA_Stopped" type="xs:double" />
+      <xs:element minOccurs="0" name="ShutDown_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="ShutDown_Stopped" type="xs:double" />
+      <xs:element minOccurs="0" name="Total_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="Total_Stopped" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LongStopSummary" nillable="true" type="tns:LongStopSummary" />
+  <xs:complexType name="ShortStopSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LenoLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="LenoStops" type="xs:int" />
+      <xs:element minOccurs="0" name="LenoperHour" type="xs:double" />
+      <xs:element minOccurs="0" name="OtherLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="OtherStops" type="xs:int" />
+      <xs:element minOccurs="0" name="OtherperHour" type="xs:double" />
+      <xs:element minOccurs="0" name="TotalLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="TotalStops" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalperHour" type="xs:double" />
+      <xs:element minOccurs="0" name="WarpAvgKnotTime" type="xs:double" />
+      <xs:element minOccurs="0" name="WarpLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="WarpStops" type="xs:int" />
+      <xs:element minOccurs="0" name="WarpperHour" type="xs:double" />
+      <xs:element minOccurs="0" name="WeftAvgKnotTime" type="xs:double" />
+      <xs:element minOccurs="0" name="WeftLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="WeftStops" type="xs:int" />
+      <xs:element minOccurs="0" name="WeftperHour" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShortStopSummary" nillable="true" type="tns:ShortStopSummary" />
+  <xs:complexType name="ArrayOfClientListInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientListInfo" nillable="true" type="tns:ClientListInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientListInfo" nillable="true" type="tns:ArrayOfClientListInfo" />
+  <xs:complexType name="ClientListInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Socket" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeWhenConnectionEstablished" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TimeWhenDataReceived" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientListInfo" nillable="true" type="tns:ClientListInfo" />
+  <xs:complexType name="LoomCollectiveInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentParams" nillable="true" type="tns:loomcurrentParams" />
+      <xs:element minOccurs="0" name="FixedParameters" nillable="true" type="tns:FixedStatistics" />
+      <xs:element minOccurs="0" name="PastShiftParams" nillable="true" type="tns:loomShiftParams" />
+      <xs:element minOccurs="0" name="PersonalInfo" nillable="true" type="tns:loompersonalInfo" />
+      <xs:element minOccurs="0" name="SessionParams" nillable="true" type="tns:loomSessionParams" />
+      <xs:element minOccurs="0" name="ShiftParams" nillable="true" type="tns:loomShiftParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoomCollectiveInfo" nillable="true" type="tns:LoomCollectiveInfo" />
+  <xs:complexType name="loomcurrentParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ContinuesRunningSeconds" type="xs:double" />
+      <xs:element minOccurs="0" name="Counter" type="xs:int" />
+      <xs:element minOccurs="0" name="CounterTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CurrentCounterState" type="tns:CounterState" />
+      <xs:element minOccurs="0" name="Current_Picks" type="xs:long" />
+      <xs:element minOccurs="0" name="Current_RPM" type="xs:double" />
+      <xs:element minOccurs="0" name="Current_SinkIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Current_SinkTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Current_State" type="tns:enMachineState" />
+      <xs:element minOccurs="0" name="DataNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="LongStopCause" type="tns:enMachineLongCause" />
+      <xs:element minOccurs="0" name="Session_ActualStartTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ShortStopCause" type="tns:enMachineShortCause" />
+      <xs:element minOccurs="0" name="SinkNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="loomcurrentParams" nillable="true" type="tns:loomcurrentParams" />
+  <xs:simpleType name="CounterState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Normal" />
+      <xs:enumeration value="Reset" />
+      <xs:enumeration value="Duplicate" />
+      <xs:enumeration value="Missing" />
+      <xs:enumeration value="Recovered" />
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="SentToSerial" />
+      <xs:enumeration value="SentToDevice" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CounterState" nillable="true" type="tns:CounterState" />
+  <xs:simpleType name="enMachineState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Stopped" />
+      <xs:enumeration value="Running" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="enMachineState" nillable="true" type="tns:enMachineState" />
+  <xs:simpleType name="enMachineLongCause">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Mechanical" />
+      <xs:enumeration value="Electrical" />
+      <xs:enumeration value="Knotting" />
+      <xs:enumeration value="ArticleChange" />
+      <xs:enumeration value="ShutDown" />
+      <xs:enumeration value="ProgramNA" />
+      <xs:enumeration value="OtherLong" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="enMachineLongCause" nillable="true" type="tns:enMachineLongCause" />
+  <xs:simpleType name="enMachineShortCause">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Warp" />
+      <xs:enumeration value="Weft" />
+      <xs:enumeration value="Leno" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="enMachineShortCause" nillable="true" type="tns:enMachineShortCause" />
+  <xs:complexType name="FixedStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LoomCardNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LoomCardParamsRequested" type="xs:int" />
+      <xs:element minOccurs="0" name="SpecsCardNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpecsParamsRequested" type="xs:int" />
+      <xs:element minOccurs="0" name="WeaverID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeaverParamsRequested" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FixedStatistics" nillable="true" type="tns:FixedStatistics" />
+  <xs:complexType name="loomShiftParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TotalDownTime" type="xs:long" />
+      <xs:element minOccurs="0" name="longStopDurations" nillable="true" type="tns:LongStopStatistics" />
+      <xs:element minOccurs="0" name="runningStatistics" nillable="true" type="tns:RunningStatistics" />
+      <xs:element minOccurs="0" name="shortStopStatistics" nillable="true" type="tns:ShortStopStatistics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="loomShiftParams" nillable="true" type="tns:loomShiftParams" />
+  <xs:complexType name="LongStopStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArticleChange_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="ArticleChange_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="Electrical_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="Electrical_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="Knotting_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="Knotting_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="Mechanical_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="Mechanical_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="OtherLong_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="OtherLong_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="ProgramNA_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="ProgramNA_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="ShutDown_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="ShutDown_Loss" type="xs:double" />
+      <xs:element minOccurs="0" name="Total_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="Total_Loss" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LongStopStatistics" nillable="true" type="tns:LongStopStatistics" />
+  <xs:complexType name="RunningStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Efficiency" type="xs:double" />
+      <xs:element minOccurs="0" name="Picks" type="xs:long" />
+      <xs:element minOccurs="0" name="PicksShouldBe" type="xs:long" />
+      <xs:element minOccurs="0" name="ProductionEfficiency" type="xs:double" />
+      <xs:element minOccurs="0" name="RPM" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RunningStatistics" nillable="true" type="tns:RunningStatistics" />
+  <xs:complexType name="ShortStopStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LenoLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="LenoStops" type="xs:int" />
+      <xs:element minOccurs="0" name="Leno_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="LenoperHour" type="xs:double" />
+      <xs:element minOccurs="0" name="OtherLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="OtherStops" type="xs:int" />
+      <xs:element minOccurs="0" name="Other_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="OtherperHour" type="xs:double" />
+      <xs:element minOccurs="0" name="TotalLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="Total_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="WarpAvgKnotTime" type="xs:double" />
+      <xs:element minOccurs="0" name="WarpLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="WarpStops" type="xs:int" />
+      <xs:element minOccurs="0" name="Warp_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="WarpperHour" type="xs:double" />
+      <xs:element minOccurs="0" name="WeftAvgKnotTime" type="xs:double" />
+      <xs:element minOccurs="0" name="WeftLoss" type="xs:double" />
+      <xs:element minOccurs="0" name="WeftStops" type="xs:int" />
+      <xs:element minOccurs="0" name="Weft_ETime" type="xs:long" />
+      <xs:element minOccurs="0" name="WeftperHour" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShortStopStatistics" nillable="true" type="tns:ShortStopStatistics" />
+  <xs:complexType name="loompersonalInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LoomID" type="xs:int" />
+      <xs:element minOccurs="0" name="LoomName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShedID" type="xs:int" />
+      <xs:element minOccurs="0" name="VersionNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="loompersonalInfo" nillable="true" type="tns:loompersonalInfo" />
+  <xs:complexType name="loomSessionParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Session_EndTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Session_Picks" type="xs:double" />
+      <xs:element minOccurs="0" name="Session_RPM" type="xs:double" />
+      <xs:element minOccurs="0" name="Session_StartTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="loomSessionParams" nillable="true" type="tns:loomSessionParams" />
+  <xs:complexType name="LoomSumUpInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Efficiency" type="xs:double" />
+      <xs:element minOccurs="0" name="LongCause" type="tns:enMachineLongCause" />
+      <xs:element minOccurs="0" name="LoomCardNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LoomName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RPM" type="xs:double" />
+      <xs:element minOccurs="0" name="Session_ActualStartTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ShortCause" type="tns:enMachineShortCause" />
+      <xs:element minOccurs="0" name="State" type="tns:enMachineState" />
+      <xs:element minOccurs="0" name="WeaverID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoomSumUpInfo" nillable="true" type="tns:LoomSumUpInfo" />
+  <xs:complexType name="Alert">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlertNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="alertCaption" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="alertText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="alertType" type="tns:AlertType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Alert" nillable="true" type="tns:Alert" />
+  <xs:simpleType name="AlertType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Information" />
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="Error" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AlertType" nillable="true" type="tns:AlertType" />
+  <xs:complexType name="sinkLoomInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Counter" type="xs:int" />
+      <xs:element minOccurs="0" name="CounterTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="DataNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="LongStopCause" type="tns:enMachineLongCause" />
+      <xs:element minOccurs="0" name="LoomID" type="xs:int" />
+      <xs:element minOccurs="0" name="MAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Picks" type="xs:long" />
+      <xs:element minOccurs="0" name="RPM" type="xs:int" />
+      <xs:element minOccurs="0" name="ShortStopCause" type="tns:enMachineShortCause" />
+      <xs:element minOccurs="0" name="SinkIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" type="tns:enMachineState" />
+      <xs:element minOccurs="0" name="Time" type="xs:long" />
+      <xs:element minOccurs="0" name="counterState" type="tns:CounterState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sinkLoomInfo" nillable="true" type="tns:sinkLoomInfo" />
+  <xs:complexType name="devicepublicinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayInfo" nillable="true" type="tns:deviceDisplayInfo" />
+      <xs:element minOccurs="0" name="PersonalInfo" nillable="true" type="tns:devicePersonalInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="devicepublicinfo" nillable="true" type="tns:devicepublicinfo" />
+  <xs:complexType name="deviceDisplayInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentArrayIndex" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CurrentString" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="LastMsgTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="sendString" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="deviceDisplayInfo" nillable="true" type="tns:deviceDisplayInfo" />
+  <xs:complexType name="devicePersonalInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeviceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeviceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EfficiencyType" type="xs:int" />
+      <xs:element minOccurs="0" name="MAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NodeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PauseSeconds" type="xs:int" />
+      <xs:element minOccurs="0" name="RemotePort" type="xs:int" />
+      <xs:element minOccurs="0" name="ShedID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isEnabled" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="devicePersonalInfo" nillable="true" type="tns:devicePersonalInfo" />
+  <xs:complexType name="ArrayOfDisplayBoardsClientListInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DisplayBoardsClientListInfo" nillable="true" type="tns:DisplayBoardsClientListInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDisplayBoardsClientListInfo" nillable="true" type="tns:ArrayOfDisplayBoardsClientListInfo" />
+  <xs:complexType name="DisplayBoardsClientListInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Socket" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeWhenConnectionEstablished" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="TimeWhenDataSent" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DisplayBoardsClientListInfo" nillable="true" type="tns:DisplayBoardsClientListInfo" />
+</xs:schema>

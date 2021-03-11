@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -94,6 +96,7 @@
     <Content Include="assets\css\demo.css" />
     <Content Include="assets\css\fonts.css" />
     <Content Include="assets\css\fonts.min.css" />
+    <Content Include="assets\css\user.css" />
     <Content Include="assets\fonts\flaticon\flaticon.css" />
     <Content Include="assets\fonts\flaticon\flaticon.html" />
     <Content Include="assets\fonts\flaticon\Flaticon.svg" />
@@ -465,6 +468,13 @@
     <Content Include="assets\js\plugin\webfont\webfont.min.js" />
     <Content Include="assets\js\setting-demo.js" />
     <Content Include="assets\js\setting-demo2.js" />
+    <None Include="Connected Services\MachineEyes\MachineEyesService.disco" />
+    <None Include="Connected Services\MachineEyes\configuration91.svcinfo" />
+    <None Include="Connected Services\MachineEyes\configuration.svcinfo" />
+    <None Include="Connected Services\MachineEyes\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -546,6 +556,53 @@
     <Content Include="assets\sass\atlantis\_responsive.scss" />
     <Content Include="assets\sass\atlantis\_typography.scss" />
     <Content Include="assets\sass\atlantis\_variables.scss" />
+    <None Include="Connected Services\MachineEyes\MachineEyesService.wsdl" />
+    <None Include="Connected Services\MachineEyes\MachineEyesService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MachineEyes\MachineEyesService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MachineEyes\MachineEyesService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MachineEyes\MachineEyesService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MachineEyes\MachineEyesService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.Alert.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.ClientListInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.devicepublicinfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.DisplayBoardsClientListInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.LoomCollectiveInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.loomcurrentParams.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.loomShiftParams.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.LoomSumUpInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.Sheds.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MachineEyes\WCFService.MachineEyes.sinkLoomInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -555,6 +612,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\MachineEyes\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -584,6 +646,12 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\MachineEyes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
