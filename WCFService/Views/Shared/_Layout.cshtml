@@ -291,7 +291,7 @@
             <!-- End Navbar -->
         </div>
         <div class="sidebar sidebar-style-2">
-            <div class="scroll-wrapper sidebar-wrapper scrollbar scrollbar-inner" style="position: relative;">
+            <div class="scroll-wrapper sidebar-wrapper scrollbar scrollbar-inner" style="position: relative; overflow-y:scroll;">
                 <div class="sidebar-wrapper scrollbar scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: -17px; margin-right: -17px; max-height: 470px;">
                     <div class="sidebar-content">
                         <div class="user">
@@ -328,7 +328,7 @@
                                 </div>
                             </div>
                         </div>
-                        <ul class="nav nav-primary">
+                        <ul class="nav nav-primary Sheds">
                             <li class="nav-item ">
                                 <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
                                     <i class="fas fa-home"></i>
@@ -341,7 +341,7 @@
                                         {
                                             <li class="side-nav-item">
                                                 <a href="#">
-                                                    <span class="sub-item">@ViewBag.Shed[j].ShedName</span>
+                                                    <span class="sub-item shedName">@ViewBag.Shed[j].ShedName</span>
                                                     <span class="sub-item vs-hide shedEfficiency">--@String.Format("{0:0.0}", ViewBag.Shed[j].shedSummary.collectiveSummary.Efficiency)</span>
 
                                                     <span class="sub-item vs-hide shedRPM">--@String.Format("{0:0.0}", ViewBag.Shed[j].shedSummary.collectiveSummary.RPM)</span>
@@ -391,11 +391,44 @@
 <script>
 
 
-    $(".side-nav-item").click(function () {
-    var pageUrl = $(location).attr("href");
-    if (pageUrl != "http://localhost:50682/") {
-        window.location.href = "http://localhost:50682/";
-    }
+
+    $(".shedName").click(function () {
+
+        var text = $(this).text();
+      
+        location.replace("http://localhost:50682" + '/' + 'Dashboard' + '/' + '#' + text.replace('/\s+/g', '').trim());
         
+
+        //var url = "http://localhost:50682/";
+        //if (url != "http://localhost:50682/") {
+           
+        //}
+        //else {
+        //    location.replace("http://localhost:50682/#")
+            
+        //}
+        //var parts = url.split("/");
+        //var last_part = parts[parts.length - 1];
+        
+        //url.replace()
+       
     });
+
+    
+    //alert(pageUrl)
+    //$(".shedName").click(function () {
+        
+    //   var pageUrl = $(location).attr("href");
+    //    if (pageUrl != "http://localhost:50682/") {
+    //        pageUrl.replace("http://localhost:50682/#")
+          
+    //    }
+    //    else {
+           
+    //    }
+     
+
+    //});
+ 
+    
 </script>
