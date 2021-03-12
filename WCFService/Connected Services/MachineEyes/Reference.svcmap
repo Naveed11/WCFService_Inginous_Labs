@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="99c5a23f-2e9a-4204-a189-03c038b18497" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://103.53.45.114:3128/MachineEyesService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MachineEyesService.disco" MetadataType="Disco" ID="aef0671f-c482-466c-9056-9ba3934e4b26" SourceId="1" SourceUrl="http://103.53.45.114:3128/MachineEyesService.svc?disco" />
+    <MetadataFile FileName="MachineEyesService.xsd" MetadataType="Schema" ID="c5322041-1094-43d4-9cc0-2f918791807e" SourceId="1" SourceUrl="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MachineEyesService1.xsd" MetadataType="Schema" ID="3e3a0371-8aa2-4bf5-8906-10d5423593bf" SourceId="1" SourceUrl="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd4" />
+    <MetadataFile FileName="MachineEyesService.wsdl" MetadataType="Wsdl" ID="14cc7c75-7318-41f2-a762-5376c0bd4569" SourceId="1" SourceUrl="http://103.53.45.114:3128/MachineEyesService.svc?wsdl" />
+    <MetadataFile FileName="MachineEyesService2.xsd" MetadataType="Schema" ID="b2af4552-e772-4b6e-8f09-221cf5a8a984" SourceId="1" SourceUrl="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MachineEyesService3.xsd" MetadataType="Schema" ID="9a8efea6-14a3-4602-8c9d-bcae91b783a6" SourceId="1" SourceUrl="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MachineEyesService4.xsd" MetadataType="Schema" ID="dd2dbd2b-f440-47d0-b4d6-4c51a8fd721c" SourceId="1" SourceUrl="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MachineEyesService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MachineEyesCore" />
+      <xsd:import schemaLocation="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://103.53.45.114:3128/MachineEyesService.svc?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMachineEyesService_Security_GetPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:Security_GetPassword" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Security_GetPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Security_GetPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Security_UserLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:Security_UserLogin" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Security_UserLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Security_UserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_ServiceStartTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_ServiceStartTime" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_ServiceStartTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_ServiceStartTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_Sheds_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Sheds" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_Sheds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_ShedsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_CoordinatorsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_CoordinatorsList" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_CoordinatorsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_CoordinatorsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsDataByShedID_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsDataByShedID" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsDataByShedID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsDataByShedIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsSumUpInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsSumUpInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsSumUpInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsSumUpInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsCurrentParams_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsCurrentParams" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsCurrentParams_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsCurrentParamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsShiftParams_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsShiftParams" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsShiftParams_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsShiftParamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsData_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsData" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomsData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomsDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomData_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomData" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_LoomData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LoomDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_DataSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_DataSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_UpdateLoom_MAC_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLoom_MAC" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_UpdateLoom_MAC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLoom_MACResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Set_ExecuteQuey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_ExecuteQuey" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Set_ExecuteQuey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_ExecuteQueyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Set_ExecuteTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_ExecuteTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Set_ExecuteTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_ExecuteTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Refresh_Settings_InputMessage">
+    <wsdl:part name="parameters" element="tns:Refresh_Settings" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Refresh_Settings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Refresh_SettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_Alerts_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Alerts" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_Alerts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_AlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_UnKnownMACData_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_UnKnownMACData" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_UnKnownMACData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_UnKnownMACDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_Device_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Device" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_Device_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_DevicesTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DevicesTotal" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_DevicesTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DevicesTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_DeviceConnections_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DeviceConnections" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_DeviceConnections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DeviceConnectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_ServerTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_ServerTime" />
+  </wsdl:message>
+  <wsdl:message name="IMachineEyesService_Get_ServerTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_ServerTimeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMachineEyesService">
+    <wsdl:operation name="Security_GetPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Security_GetPassword" message="tns:IMachineEyesService_Security_GetPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Security_GetPasswordResponse" message="tns:IMachineEyesService_Security_GetPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Security_UserLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Security_UserLogin" message="tns:IMachineEyesService_Security_UserLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Security_UserLoginResponse" message="tns:IMachineEyesService_Security_UserLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServiceStartTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_ServiceStartTime" message="tns:IMachineEyesService_Get_ServiceStartTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_ServiceStartTimeResponse" message="tns:IMachineEyesService_Get_ServiceStartTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Sheds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_Sheds" message="tns:IMachineEyesService_Get_Sheds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_ShedsResponse" message="tns:IMachineEyesService_Get_Sheds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CoordinatorsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_CoordinatorsList" message="tns:IMachineEyesService_Get_CoordinatorsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_CoordinatorsListResponse" message="tns:IMachineEyesService_Get_CoordinatorsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsDataByShedID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsDataByShedID" message="tns:IMachineEyesService_Get_LoomsDataByShedID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsDataByShedIDResponse" message="tns:IMachineEyesService_Get_LoomsDataByShedID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsSumUpInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsSumUpInfo" message="tns:IMachineEyesService_Get_LoomsSumUpInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsSumUpInfoResponse" message="tns:IMachineEyesService_Get_LoomsSumUpInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsCurrentParams">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsCurrentParams" message="tns:IMachineEyesService_Get_LoomsCurrentParams_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsCurrentParamsResponse" message="tns:IMachineEyesService_Get_LoomsCurrentParams_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsShiftParams">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsShiftParams" message="tns:IMachineEyesService_Get_LoomsShiftParams_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsShiftParamsResponse" message="tns:IMachineEyesService_Get_LoomsShiftParams_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsData" message="tns:IMachineEyesService_Get_LoomsData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomsDataResponse" message="tns:IMachineEyesService_Get_LoomsData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomData" message="tns:IMachineEyesService_Get_LoomData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_LoomDataResponse" message="tns:IMachineEyesService_Get_LoomData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_DataSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_DataSet" message="tns:IMachineEyesService_Get_DataSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_DataSetResponse" message="tns:IMachineEyesService_Get_DataSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoom_MAC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/UpdateLoom_MAC" message="tns:IMachineEyesService_UpdateLoom_MAC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/UpdateLoom_MACResponse" message="tns:IMachineEyesService_UpdateLoom_MAC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_ExecuteQuey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Set_ExecuteQuey" message="tns:IMachineEyesService_Set_ExecuteQuey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Set_ExecuteQueyResponse" message="tns:IMachineEyesService_Set_ExecuteQuey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_ExecuteTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Set_ExecuteTransaction" message="tns:IMachineEyesService_Set_ExecuteTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Set_ExecuteTransactionResponse" message="tns:IMachineEyesService_Set_ExecuteTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Refresh_Settings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Refresh_Settings" message="tns:IMachineEyesService_Refresh_Settings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Refresh_SettingsResponse" message="tns:IMachineEyesService_Refresh_Settings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Alerts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_Alerts" message="tns:IMachineEyesService_Get_Alerts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_AlertsResponse" message="tns:IMachineEyesService_Get_Alerts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_UnKnownMACData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_UnKnownMACData" message="tns:IMachineEyesService_Get_UnKnownMACData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_UnKnownMACDataResponse" message="tns:IMachineEyesService_Get_UnKnownMACData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Device">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_Device" message="tns:IMachineEyesService_Get_Device_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_DeviceResponse" message="tns:IMachineEyesService_Get_Device_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_DevicesTotal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_DevicesTotal" message="tns:IMachineEyesService_Get_DevicesTotal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_DevicesTotalResponse" message="tns:IMachineEyesService_Get_DevicesTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_DeviceConnections">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_DeviceConnections" message="tns:IMachineEyesService_Get_DeviceConnections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_DeviceConnectionsResponse" message="tns:IMachineEyesService_Get_DeviceConnections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServerTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMachineEyesService/Get_ServerTime" message="tns:IMachineEyesService_Get_ServerTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMachineEyesService/Get_ServerTimeResponse" message="tns:IMachineEyesService_Get_ServerTime_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Basichttp_EndPoint" type="tns:IMachineEyesService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Security_GetPassword">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Security_GetPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Security_UserLogin">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Security_UserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServiceStartTime">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_ServiceStartTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Sheds">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_Sheds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CoordinatorsList">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_CoordinatorsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsDataByShedID">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_LoomsDataByShedID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsSumUpInfo">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_LoomsSumUpInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsCurrentParams">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_LoomsCurrentParams" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsShiftParams">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_LoomsShiftParams" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomsData">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_LoomsData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_LoomData">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_LoomData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DataSet">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoom_MAC">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/UpdateLoom_MAC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_ExecuteQuey">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Set_ExecuteQuey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_ExecuteTransaction">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Set_ExecuteTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Refresh_Settings">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Refresh_Settings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Alerts">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_Alerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_UnKnownMACData">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_UnKnownMACData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Device">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_Device" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DevicesTotal">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_DevicesTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DeviceConnections">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_DeviceConnections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServerTime">
+      <soap:operation soapAction="http://tempuri.org/IMachineEyesService/Get_ServerTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MachineEyesService">
+    <wsdl:port name="Basichttp_EndPoint" binding="tns:Basichttp_EndPoint">
+      <soap:address location="http://103.53.45.114:3128/MachineEyesService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

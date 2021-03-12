@@ -1,0 +1,203 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<html>
+<head>
+</head>
+
+<body>
+
+    <!--Modal Starts Here-->
+    <div class="modal fade bd-example-modal-lg" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+            <!-- content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <!-- header -->
+                <!-- header -->
+                <!-- body -->
+                <div class="modal-body">
+                    <table class="table table-bordered table-condensed table-responsive table-hover font-family-changer " id="empTable" data-toggle="modal" data-target="#myModal">
+                        <thead>
+                            <tr style="background-color:black; color:white;" class="table-background-color-changer   text-center">
+
+                                <td>Desgination</td>
+                                <td>Address</td>
+                                <td>Specialist</td>
+                                <td>Date of Birth</td>
+                                <td>Sex</td>
+                                <td>Blood Group</td>
+                                <td>Status</td>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr class="text-center">
+                                <td id="Desgination"></td>
+                                <td id="Address"></td>
+                                <td id="Specialist"></td>
+                                <td id="dateofbirth"></td>
+                                <td id="sex"></td>
+                                <td id="bloodgroup"></td>
+                                <td id="status"></td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- body -->
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button class="btn btn-primary"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+
+                </div>
+                <!-- footer -->
+
+            </div>
+            <!-- content -->
+
+        </div>
+        <!-- dialog -->
+
+    </div>
+
+    <!--Modal End Here-->
+
+    
+    
+
+    <div class="main-panel">
+        <div class="content">
+
+            <div class="page-inner mt--5">
+
+                <div class="col-md-12">
+                    <div class="card full-height">
+                        <div class="card-body" style="margin-top: 8%;">
+                            @*<div class="card-title">Overall statistics</div>
+                                <div class="card-category">Daily information about statistics in system</div>*@
+                            <div class="d-flex flex-wrap justify-content-start pb-2 pt-4">
+
+                                @for (int i = 0; i < 12; i++)
+
+                                {
+                                    <div class="col-sm-1 px-2 pb-2 pb-md-0 text-center">
+                                        <div id="circles-1" class="circles-1 btn-modal " style="cursor:pointer;" data-toggle='modal' data-target='.bd-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+                                            <div class="circles-wrp" style="position: relative; display: inline-block;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+                                                    <path fill="transparent" stroke="#f1f1f1" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 44.942357332570026 3.500040032273624 Z"
+                                                          class="circles-maxValueStroke"></path>
+                                                    <path fill="transparent" stroke="#FF9E27" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 20.64435763625984 78.60137921350231 "
+                                                          class="circles-valueStroke"></path>
+                                                </svg>
+                                                <div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 31.5px; height: 90px; line-height: 90px;">2</div>
+                                            </div>
+                                        </div>
+                                        <h6 class="fw-bold mt-3 mb-0 circles-text-bottom">New Users</h6>
+                                    </div>
+
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card full-height">
+                        <div class="card-body">
+                            <div class="card-title">Total income &amp; spend statistics</div>
+                            <div class="row py-3">
+                                <div class="col-md-4 d-flex flex-column justify-content-around">
+                                    <div>
+                                        <h6 class="fw-bold text-uppercase text-success op-8">Total Income</h6>
+                                        <h3 class="fw-bold">$9.782</h3>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold text-uppercase text-danger op-8">Total Spend</h6>
+                                        <h3 class="fw-bold">$1,248</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div id="chart-container">
+                                        <div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                        <canvas id="totalIncomeChart" style="display: block; width: 376px; height: 150px;" width="376" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row row-card-no-pd">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+<script>
+
+    
+    $(document).ready(function () {
+        
+        $(".side-nav-item").click(function () {
+            $(".side-nav-item").removeClass("active");
+            $(this).addClass("active");
+            var str = $(".side-nav-item.active").text();
+            var efficiency = $(".side-nav-item.active .shedEfficiency").text();
+            $(".eff-perc").text(efficiency.replace('--',' '));
+
+            var rpm = $(".side-nav-item.active .shedRPM").text();
+            $(".eff-rpm").text(rpm.replace('--', ' '));
+
+            //shedSummary
+            //$(".menu-active-title").text((".side-nav-item.active sub-item").text);
+            //var menuTitle = $(".menu-active-title").text(str);
+            
+            var menuTitle = $(".menu-active-title").text(str.replace(/[^a-zA-Z ]/g, ''));
+            
+           
+         //var efficiency =    $(".eff-perc").text(str.substring(str.indexOf("--") + 2));
+            //efficiency.slice(0, -1);
+
+
+           
+            //setTimeout(function () {
+            //    for (int i = 0;i < )
+            //    $(".side-nav-item").trigger('click');
+            //    //location.href = "/Dashboard/Index"
+
+            //}, 5000);     
+
+
+        });
+
+     
+    });
+  
+</script>

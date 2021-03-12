@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WCF Services</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" href="~/assets/img/icon.ico" type="image/x-icon" />
+
+    <!-- Fonts and icons -->
+    <script src="~/assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: { "families": ["Lato:300,400,700,900"] },
+            custom: { "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../assets/css/fonts.min.css'] },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="~/assets/css/user.css">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/atlantis.min.css">
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="~/assets/css/demo.css">
+</head>
+<body>
+
+    <!-- End Custom template -->
+    <!--   Core JS Files   -->
+
+
+    <script src="/path/to/cdn/jquery.slim.min.js" "></script>
+    <script src="~/inc/jquery.mb.browser.min.js"></script>
+    <script src="~/inc/jquery.mb.simpleSlider.min.js"></script>
+    <link href="~/css/simpleSlider.css" rel="stylesheet" />
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="http://cdn-na.infragistics.com/igniteui/2020.2/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="http://cdn-na.infragistics.com/igniteui/2020.2/latest/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI for jQuery Required Combined JavaScript Files -->
+    <script src="http://cdn-na.infragistics.com/igniteui/2020.2/latest/js/infragistics.core.js"></script>
+    <script src="http://cdn-na.infragistics.com/igniteui/2020.2/latest/js/infragistics.dv.js"></script>
+
+
+    <script src="~/assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="~/assets/js/core/popper.min.js"></script>
+    <script src="~/assets/js/core/bootstrap.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="~/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="~/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="~/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="~/assets/js/plugin/chart.js/chart.min.js"></script>
+    <!-- jQuery Sparkline -->
+    <script src="~/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <!-- Chart Circle -->
+    <script src="~/assets/js/plugin/chart-circle/circles.min.js"></script>
+    <!-- Datatables -->
+    <script src="~/assets/js/plugin/datatables/datatables.min.js"></script>
+    <!-- Bootstrap Notify -->
+    <script src="~/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <!-- jQuery Vector Maps -->
+    <script src="~/assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="~/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+    <!-- Sweet Alert -->
+    <script src="~/assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <!-- Atlantis JS -->
+    <script src="~/assets/js/atlantis.min.js"></script>
+    <!-- Atlantis DEMO methods, don't include it in your project! -->
+    <script src="~/assets/js/setting-demo.js"></script>
+    <script src="~/assets/js/demo.js"></script>
+    <script>
+        Circles.create({
+            id: 'circles-1',
+            radius: 45,
+            value: 60,
+            maxValue: 100,
+            width: 7,
+            text: 5,
+            colors: ['#f1f1f1', '#FF9E27'],
+            duration: 400,
+            wrpClass: 'circles-wrp',
+            textClass: 'circles-text',
+            styleWrapper: true,
+            styleText: true
+        })
+
+        Circles.create({
+            id: 'circles-2',
+            radius: 45,
+            value: 70,
+            maxValue: 100,
+            width: 7,
+            text: 36,
+            colors: ['#f1f1f1', '#2BB930'],
+            duration: 400,
+            wrpClass: 'circles-wrp',
+            textClass: 'circles-text',
+            styleWrapper: true,
+            styleText: true
+        })
+
+        Circles.create({
+            id: 'circles-3',
+            radius: 45,
+            value: 40,
+            maxValue: 100,
+            width: 7,
+            text: 12,
+            colors: ['#f1f1f1', '#F25961'],
+            duration: 400,
+            wrpClass: 'circles-wrp',
+            textClass: 'circles-text',
+            styleWrapper: true,
+            styleText: true
+        })
+
+        var totalIncomeChart = document.getElementById('totalIncomeChart').getContext('2d');
+
+        var mytotalIncomeChart = new Chart(totalIncomeChart, {
+            type: 'bar',
+            data: {
+                labels: ["S", "M", "T", "W", "T", "F", "S", "S", "M", "T"],
+                datasets: [{
+                    label: "Total Income",
+                    backgroundColor: '#ff9e27',
+                    borderColor: 'rgb(23, 125, 255)',
+                    data: [6, 4, 9, 5, 4, 6, 4, 3, 8, 10],
+                }],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false,
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            display: false //this will remove only the label
+                        },
+                        gridLines: {
+                            drawBorder: false,
+                            display: false
+                        }
+                    }],
+                    xAxes: [{
+                        gridLines: {
+                            drawBorder: false,
+                            display: false
+                        }
+                    }]
+                },
+            }
+        });
+
+        $('#lineChart').sparkline([105, 103, 123, 100, 95, 105, 115], {
+            type: 'line',
+            height: '70',
+            width: '100%',
+            lineWidth: '2',
+            lineColor: '#ffa534',
+            fillColor: 'rgba(255, 165, 52, .14)'
+        });
+    </script>
+    <div class="wrapper">
+
+        @RenderBody()
+        <div class="main-header">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="blue">
+                <a href="#" class="logo">
+                    @*<img src="~/assets/img/logo.svg" alt="navbar brand" class="navbar-brand">*@
+                    <h2 style="color:white;margin-top:15px;">WCF Service</h2>
+                </a>
+                <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="icon-menu"></i>
+                    </span>
+                </button>
+                <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+                <div class="nav-toggle">
+                    <button class="btn btn-toggle toggle-sidebar">
+                        <i class="icon-menu"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- End Logo Header -->
+            <!-- Navbar Header -->
+            <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+                <div class="container-fluid">
+                    <div class="collapse" id="search-nav">
+                        <h1 class="menu-active-title"></h1>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-start pb-2 pt-4 top-bar-circle rpmGauageMeter" style="padding-top:7px !important;">
+                        <div class="px-2 pb-2 pb-md-0 text-center">
+                            <div id="circles-2">
+                                <div class="circles-wrp" style="position: relative; display: inline-block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+                                        <path fill="transparent" stroke="#f1f1f1" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 44.942357332570026 3.500040032273624 Z" class="circles-maxValueStroke"></path>
+                                        <path fill="transparent" stroke="#FF9E27" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 20.64435763625984 78.60137921350231 " class="circles-valueStroke"></path>
+                                    </svg>
+                                    <div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 22.5px; height: 90px; line-height: 90px;">
+
+                                        @*@for (int j = 0; j < @ViewBag.Shed.Length; j++)
+                                        {
+                                                    <span class="eff-perc">@String.Format("{0:0.0}", ViewBag.Shed[j].shedSummary.collectiveSummary.Efficiency)%</span>
+
+                                        }*@
+                                        <span class="eff-rpm"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mt-3 mb-0 circles-text-bottom" style="margin-top:0px !important;">RPM</h6>
+                        </div>
+                        <div class="px-2 pb-2 pb-md-0 text-center">
+                            <div id="circles-2">
+                                <div class="circles-wrp" style="position: relative; display: inline-block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+                                        <path fill="transparent" stroke="#f1f1f1" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 44.942357332570026 3.500040032273624 Z" class="circles-maxValueStroke"></path>
+                                        <path fill="transparent" stroke="#FF9E27" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 20.64435763625984 78.60137921350231 " class="circles-valueStroke"></path>
+                                    </svg>
+                                    <div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 22.5px; height: 90px; line-height: 90px;">
+
+                                        @*@for (int j = 0; j < @ViewBag.Shed.Length; j++)
+                                        {
+                                                    <span class="eff-perc">@String.Format("{0:0.0}", ViewBag.Shed[j].shedSummary.collectiveSummary.Efficiency)%</span>
+
+                                        }*@
+                                        <span class="eff-perc"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mt-3 mb-0 circles-text-bottom" style="margin-top:0px !important;">Efficiency</h6>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav topbar-nav align-items-center">
+
+
+
+
+                        <li class="nav-item dropdown hidden-caret">
+                            <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <div class="avatar-sm">
+                                    <img src="~/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user animated fadeIn">
+                                <div class="scroll-wrapper dropdown-user-scroll scrollbar-outer" style="position: relative;">
+                                    <div class="dropdown-user-scroll scrollbar-outer scroll-content" style="height: auto; margin-bottom: -17px; margin-right: -17px; max-height: 17px;">
+                                        <li>
+                                            <div class="user-box">
+                                                <div class="avatar-lg"><img src="~/assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+                                                <div class="u-text">
+                                                    <h4>Hizrian</h4>
+                                                    <p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">My Profile</a>
+                                            <a class="dropdown-item" href="#">My Balance</a>
+                                            <a class="dropdown-item" href="#">Inbox</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Account Setting</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </li>
+                                    </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle"></div></div></div>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+        <div class="sidebar sidebar-style-2">
+            <div class="scroll-wrapper sidebar-wrapper scrollbar scrollbar-inner" style="position: relative;">
+                <div class="sidebar-wrapper scrollbar scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: -17px; margin-right: -17px; max-height: 470px;">
+                    <div class="sidebar-content">
+                        <div class="user">
+                            <div class="avatar-sm float-left mr-2">
+                                <img src="~/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <div class="info">
+                                <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                                    <span>
+                                        Hizrian
+                                        <span class="user-level">Administrator</span>
+                                        <span class="caret"></span>
+                                    </span>
+                                </a>
+                                <div class="clearfix"></div>
+                                <div class="collapse in" id="collapseExample">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#profile">
+                                                <span class="link-collapse">My Profile</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#edit">
+                                                <span class="link-collapse">Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#settings">
+                                                <span class="link-collapse">Settings</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav nav-primary">
+                            <li class="nav-item ">
+                                <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+                                    <i class="fas fa-home"></i>
+                                    <p>Sheds</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="dashboard">
+                                    <ul class="nav nav-collapse mainMenuItem">
+                                        @for (int j = 0; j < @ViewBag.Shed.Length; j++)
+                                        {
+                                            <li class="side-nav-item">
+                                                <a href="#">
+                                                    <span class="sub-item">@ViewBag.Shed[j].ShedName</span>
+                                                    <span class="sub-item vs-hide shedEfficiency">--@String.Format("{0:0.0}", ViewBag.Shed[j].shedSummary.collectiveSummary.Efficiency)</span>
+
+                                                    <span class="sub-item vs-hide shedRPM">--@String.Format("{0:0.0}", ViewBag.Shed[j].shedSummary.collectiveSummary.RPM)</span>
+
+
+                                                </a>
+                                            </li>
+
+                                        }
+                                        @*<li>
+                                            <a href="../demo2/index.html">
+                                                <span class="sub-item">Dashboard 2</span>
+                                            </a>
+                                        </li>*@
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="/Dashboard/Setting">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Settings</p>
+
+                                </a>
+
+                            </li>
+                            <li class="nav-section">
+                                <span class="sidebar-mini-icon">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </span>
+
+                            </li>
+
+
+
+
+
+                        </ul>
+                    </div>
+                </div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle" style="width: 88px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle" style="height: 296px; top: 0px;"></div></div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+
+    $(".side-nav-item").click(function () {
+    var pageUrl = $(location).attr("href");
+    if (pageUrl != "http://localhost:50682/") {
+        window.location.href = "http://localhost:50682/";
+    }
+        
+    });
+</script>

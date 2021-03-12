@@ -1,0 +1,207 @@
+R:\myBackup\WCFService\WCFService\WCFService\bin\WCFService.dll.config
+R:\myBackup\WCFService\WCFService\WCFService\bin\WCFService.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\WCFService.pdb
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\csc.exe
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\csc.exe.config
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\csc.rsp
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\csi.exe
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\csi.exe.config
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\csi.rsp
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.CodeAnalysis.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.CSharp.Core.targets
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.Managed.Core.targets
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.AppContext.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Collections.Immutable.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Console.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Diagnostics.StackTrace.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.IO.Compression.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.IO.FileSystem.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.IO.FileSystem.Primitives.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.IO.Pipes.AccessControl.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.IO.Pipes.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Reflection.Metadata.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Security.AccessControl.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Security.Claims.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Security.Cryptography.Encoding.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Security.Cryptography.Primitives.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Security.Principal.Windows.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Text.Encoding.CodePages.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.ValueTuple.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Xml.ReaderWriter.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Xml.XmlDocument.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Xml.XPath.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\System.Xml.XPath.XDocument.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\vbc.exe
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\vbc.exe.config
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\vbc.rsp
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\VBCSCompiler.exe
+R:\myBackup\WCFService\WCFService\WCFService\bin\roslyn\VBCSCompiler.exe.config
+R:\myBackup\WCFService\WCFService\WCFService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\Microsoft.Web.Infrastructure.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Helpers.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Mvc.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Razor.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Webpages.Deployment.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Webpages.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Webpages.Razor.dll
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Razor.xml
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Webpages.xml
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Webpages.Deployment.xml
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Webpages.Razor.xml
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Helpers.xml
+R:\myBackup\WCFService\WCFService\WCFService\bin\System.Web.Mvc.xml
+R:\myBackup\WCFService\WCFService\WCFService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+R:\myBackup\WCFService\WCFService\WCFService\obj\Release\WCFService.csprojAssemblyReference.cache
+R:\myBackup\WCFService\WCFService\WCFService\obj\Release\WCFService.csproj.CoreCompileInputs.cache
+R:\myBackup\WCFService\WCFService\WCFService\obj\Release\WCFService.csproj.CopyComplete
+R:\myBackup\WCFService\WCFService\WCFService\obj\Release\WCFService.dll
+R:\myBackup\WCFService\WCFService\WCFService\obj\Release\WCFService.pdb
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\WCFService.dll.config
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\WCFService.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\WCFService.pdb
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\csc.exe
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\csc.exe.config
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\csc.rsp
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\csi.exe
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\csi.exe.config
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\csi.rsp
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.Managed.Core.targets
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.AppContext.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Collections.Immutable.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Console.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.IO.Compression.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.IO.FileSystem.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.IO.Pipes.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Reflection.Metadata.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Security.AccessControl.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Security.Claims.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Security.Principal.Windows.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.ValueTuple.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Xml.XmlDocument.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Xml.XPath.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\vbc.exe
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\vbc.exe.config
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\vbc.rsp
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\VBCSCompiler.exe
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\roslyn\VBCSCompiler.exe.config
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\Microsoft.Web.Infrastructure.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Helpers.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Mvc.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Razor.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Webpages.Deployment.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Webpages.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Webpages.Razor.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Razor.xml
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Webpages.xml
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Webpages.Deployment.xml
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Webpages.Razor.xml
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Helpers.xml
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\System.Web.Mvc.xml
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\obj\Release\WCFService.csproj.CoreCompileInputs.cache
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\obj\Release\WCFService.csproj.CopyComplete
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\obj\Release\WCFService.dll
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\obj\Release\WCFService.pdb
+D:\AbRafay\Ingenious Projects\WCF Project\WCFService\obj\Release\WCFService.csprojAssemblyReference.cache
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\WCFService.dll.config
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\WCFService.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\WCFService.pdb
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\csc.exe
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\csc.exe.config
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\csc.rsp
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\csi.exe
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\csi.exe.config
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\csi.rsp
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.CodeAnalysis.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.CSharp.Core.targets
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.Managed.Core.targets
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.AppContext.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Collections.Immutable.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Console.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Diagnostics.StackTrace.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.IO.Compression.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.IO.FileSystem.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.IO.FileSystem.Primitives.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.IO.Pipes.AccessControl.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.IO.Pipes.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Reflection.Metadata.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Security.AccessControl.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Security.Claims.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Security.Cryptography.Encoding.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Security.Cryptography.Primitives.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Security.Principal.Windows.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Text.Encoding.CodePages.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.ValueTuple.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Xml.ReaderWriter.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Xml.XmlDocument.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Xml.XPath.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\System.Xml.XPath.XDocument.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\vbc.exe
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\vbc.exe.config
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\vbc.rsp
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\VBCSCompiler.exe
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\roslyn\VBCSCompiler.exe.config
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\Microsoft.Web.Infrastructure.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Helpers.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Mvc.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Razor.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Webpages.Deployment.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Webpages.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Webpages.Razor.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Razor.xml
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Webpages.xml
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Webpages.Deployment.xml
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Webpages.Razor.xml
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Helpers.xml
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\System.Web.Mvc.xml
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\obj\Release\WCFService.csprojAssemblyReference.cache
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\obj\Release\WCFService.csproj.CoreCompileInputs.cache
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\obj\Release\WCFService.csproj.CopyComplete
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\obj\Release\WCFService.dll
+R:\myBackup\WCFService\WCFService_Inginous_Labs-master\WCFService\obj\Release\WCFService.pdb

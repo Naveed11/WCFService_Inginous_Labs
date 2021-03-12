@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "Setting";
+}
+<div class="main-header">
+    <!-- Logo Header -->
+    <div class="logo-header" data-background-color="blue">
+        <a href="#" class="logo">
+            @*<img src="~/assets/img/logo.svg" alt="navbar brand" class="navbar-brand">*@
+            <h2 style="color:white;margin-top:15px;">WCF Service</h2>
+        </a>
+        <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="icon-menu"></i>
+            </span>
+        </button>
+        <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+        <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+    </div>
+    <!-- End Logo Header -->
+    <!-- Navbar Header -->
+    <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+        <div class="container-fluid">
+            <div class="collapse" id="search-nav">
+                <h1 class="menu-active-title"></h1>
+            </div>
+            <div class="d-flex flex-wrap justify-content-start pb-2 pt-4 top-bar-circle rpmGauageMeter" style="padding-top:7px !important;">
+                <div class="px-2 pb-2 pb-md-0 text-center">
+                    <div id="circles-2">
+                        <div class="circles-wrp" style="position: relative; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+                                <path fill="transparent" stroke="#f1f1f1" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 44.942357332570026 3.500040032273624 Z" class="circles-maxValueStroke"></path>
+                                <path fill="transparent" stroke="#FF9E27" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 20.64435763625984 78.60137921350231 " class="circles-valueStroke"></path>
+                            </svg>
+                            <div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 22.5px; height: 90px; line-height: 90px;">
+
+                                @*@for (int j = 0; j < @ViewBag.Shed.Length; j++)
+                                    {
+                                                <span class="eff-perc">@String.Format("{0:0.0}", ViewBag.Shed[j].shedSummary.collectiveSummary.Efficiency)%</span>
+
+                                    }*@
+                                <span class="eff-rpm"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="fw-bold mt-3 mb-0 circles-text-bottom" style="margin-top:0px !important;">RPM</h6>
+                </div>
+                <div class="px-2 pb-2 pb-md-0 text-center">
+                    <div id="circles-2">
+                        <div class="circles-wrp" style="position: relative; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+                                <path fill="transparent" stroke="#f1f1f1" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 44.942357332570026 3.500040032273624 Z" class="circles-maxValueStroke"></path>
+                                <path fill="transparent" stroke="#FF9E27" stroke-width="7" d="M 44.99154756204665 3.500000860767564 A 41.5 41.5 0 1 1 20.64435763625984 78.60137921350231 " class="circles-valueStroke"></path>
+                            </svg>
+                            <div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 22.5px; height: 90px; line-height: 90px;">
+
+                                @*@for (int j = 0; j < @ViewBag.Shed.Length; j++)
+                                    {
+                                                <span class="eff-perc">@String.Format("{0:0.0}", ViewBag.Shed[j].shedSummary.collectiveSummary.Efficiency)%</span>
+
+                                    }*@
+                                <span class="eff-perc"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="fw-bold mt-3 mb-0 circles-text-bottom" style="margin-top:0px !important;">Efficiency</h6>
+                </div>
+            </div>
+            <ul class="navbar-nav topbar-nav align-items-center">
+
+
+
+
+                <li class="nav-item dropdown hidden-caret">
+                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <div class="avatar-sm">
+                            <img src="~/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user animated fadeIn">
+                        <div class="scroll-wrapper dropdown-user-scroll scrollbar-outer" style="position: relative;">
+                            <div class="dropdown-user-scroll scrollbar-outer scroll-content" style="height: auto; margin-bottom: -17px; margin-right: -17px; max-height: 17px;">
+                                <li>
+                                    <div class="user-box">
+                                        <div class="avatar-lg"><img src="~/assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+                                        <div class="u-text">
+                                            <h4>Hizrian</h4>
+                                            <p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">My Profile</a>
+                                    <a class="dropdown-item" href="#">My Balance</a>
+                                    <a class="dropdown-item" href="#">Inbox</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Account Setting</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle"></div></div></div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+</div>
+
